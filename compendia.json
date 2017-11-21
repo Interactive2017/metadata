@@ -1,0 +1,40 @@
+{
+    "meatadata": {
+        "o2r": { //standard o2r metadata structure
+            "interaction": [
+                {
+                    "figure_id": "String", //unique within ERC
+                    "type": "timeseries/map",
+                    "widgets": [ //type of parameter change interaction
+                        {
+                            "type": "slider",
+                            "default_value": "numeric",
+                            "min_value": "numeric",
+                            "max_value": "numeric",
+                            "param_name": "String", //name of the parameter in R function
+                            "steps_size": "numeric",
+                            "description": "String" //caption of the slider
+                        }
+                    ],
+                    "original": "path/to/original/image", //original image of the author
+                    "endpoint": "openCPU/link/for/function", //endpoint calling the function for the figure/computation
+                    //all information to this point are entered by author while uploading ERC
+                    "results": [ //callback of openCPU
+                        {
+                            "session_id": "String",
+                            "param_values": { //name & values of parameters sent to openCPU, resulting in this result
+                                "x": "numeric",
+                                "y": "numeric" 
+                            },
+                            "graphic": "link/to/the/resulting/image", //optional
+                            "object": "Object", //optional; returned object from openCPU (.val)
+                            "endpoints": [
+                                //all links to the results of the execution of the script
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
