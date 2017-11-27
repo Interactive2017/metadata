@@ -16,11 +16,10 @@
                             "description": "String" //caption of the slider
                         }
                     ],
-                    "original": "path/to/original/image", //original image of the author
                     "endpoint": "openCPU/link/for/function", //endpoint calling the function for the figure/computation
                     //all information to this point are entered by author while uploading ERC
                     "results": [ //callback of openCPU
-                        {
+                        {// the first element of the results will always be the initial calculation (with standard values)
                             "session_id": "String",
                             "param_values": { //name & values of parameters sent to openCPU, resulting in this result
                                 "x": "numeric",
