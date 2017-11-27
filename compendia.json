@@ -18,20 +18,10 @@
                     ],
                     "endpoint": "openCPU/link/for/function", //endpoint calling the function for the figure/computation
                     //all information to this point are entered by author while uploading ERC
-                    "results": [ //callback of openCPU
-                        {// the first element of the results will always be the initial calculation (with standard values)
-                            "session_id": "String",
-                            "param_values": { //name & values of parameters sent to openCPU, resulting in this result
-                                "x": "numeric",
-                                "y": "numeric" 
-                            },
-                            "graphic": "link/to/the/resulting/image", //optional
-                            "object": "Object", //optional; returned object from openCPU (.val)
-                            "endpoints": [
-                                //all links to the results of the execution of the script
-                            ]
-                        }
-                    ]
+                    "original": {
+                        "values": "Object",
+                        "image": "path/to/the/created/image"
+                    }
                 }
             ]
         }
