@@ -6,6 +6,8 @@
                     "figure_id": "String", //unique within ERC
                     "type": "timeseries/map",
                     "title": "String",
+                    "x-axis-label": "String",
+                    "y-axis-label": "String",
                     "widgets": [ //type of parameter change interaction
                         {
                             "type": "slider",
