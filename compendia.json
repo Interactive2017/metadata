@@ -6,10 +6,10 @@
                     "figure_id": "String", //unique within ERC
                     "type": "timeseries/map",
                     "title": "String",
-                    "x-axis-label": "String", //label to put into the time series visualization
-                    "y-axis-label": "String", //label to put into the time series visualization
-                    "x-axis-parameter": "String", //name of the parameter in the json received from the ocpu
-                    "y-axis-parameter": "String", //name of the parameter in the json received from the ocpu
+                    "x_axis_label": "String", //label to put into the time series visualization
+                    "y_axis_label": "String", //label to put into the time series visualization
+                    "x_axis_parameter": "String", //name of the parameter in the json received from the ocpu
+                    "y_axis_parameter": "String", //name of the parameter in the json received from the ocpu
                     "widgets": [ //type of parameter change interaction
                         {
                             "type": "slider",
